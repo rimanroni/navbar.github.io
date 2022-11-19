@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--  navbar start -->
+    <div class=" bg-blue-500">
+        <div class="flex justify-between items-center p-6 px-6 lg-px-0 container mx-auto">
+            <!-- logo -->
+            <div class="text-lg font-bold uppercase text-white cursor-pointer "> Riman Roni</div>
+            <!-- hamburger -->
+            <input class="peer hidden" type="checkbox" name="hamburger" id="hamburger">
+            <label class="peer-checked:hamburger block relative cursor-pointer lg:hidden border-2 border-gray-300
+            peer-checked:border-2  peer-checked:border-white p-3 rounded-md transition-all" for="hamburger">
+             <div class="m-auto w-6 h-0.5 rounded bg-gray-300 transition-all duration-300"></div>
+             <div class="m-auto w-6 mt-2 h-0.5 rounded bg-gray-300 transition-all duration-300"></div>
+        </label>
+           <!--  Menu bar -->
+           <div class="translate-y-full peer-checked:translate-y-0 lg:translate-y-0 inset-0 fixed lg:static pt-20 lg:pt-0 bg-white lg:bg-transparent -z-10 lg:z-10 lg:h-auto lg:w-auto
+           transition-all duration-300 ease-in-out">
+            <div class="bg-white shadow-md lg:bg-transparent lg:shadow-none py-10 lg:py-0 flex flex-col lg:items-center lg:flex-row px-6 space-y-4 
+            lg:space-y-0  lg:space-x-12">
+                <a class="text-black lg:text-white md:hover:text-gray-300 transition-all  " href="#">Home</a>
+                <a class="text-black lg:text-white md:hover:text-gray-300 transition-all  "  href="#">About</a>
+                <a class="text-black lg:text-white md:hover:text-gray-300 transition-all  " href="#">Protfolio</a>
+                <a class="text-black lg:text-white md:hover:text-gray-300 transition-all " href="#">Service</a>
+                <a class="text-black lg:text-white md:hover:text-gray-300 transition-all  " href="#">Contact</a>
+            </div>
+           </div>
+        </div>
+    </div>
+    <!--  navbar end  -->
+</body>
+</html>
